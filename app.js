@@ -3,9 +3,22 @@ var path=require('path')
 //引入express依赖模块，用来启动静态服务器
 var express=require('express')
 
+var proxy=require('http-proxy-middleware');
 
 //实例express
 var app=express();
+
+//app.get('/login',function(rep,res){
+//	res.send('ha ha ha')
+//})
+//定义通过/api访问的请求，转发到指定路径
+app.use('/api',proxy({
+	target:'http://122.10.30.153:9901',
+	pathRewrite:{
+		'^/api':'/'
+	}
+}))
+
 
 console.log(__dirname);
 var viewsPath=path.join(__dirname,'views');
@@ -27,8 +40,8 @@ app.get('/login',function(req,res){
 });
 
 //监听端口9999，用来启动服务
-app.listen(9999,function(){
-	console.log('server run at port 9999')
+app.listen(9957,function(){
+	console.log('server run at port 9957')
 });
 
 //模块导出

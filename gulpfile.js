@@ -25,9 +25,9 @@ gulp.task('nodemon',function(ab){
 gulp.task('browserSync',['nodemon'],function(){
 	browserSync.init({
 		proxy:{
-			target:'http://127.0.0.1:9999'
+			target:'http://127.0.0.1:9957'
 		},
-		files:['*' ],
+		files:['*'],
 		port:9888,
 		open:false
 	})
@@ -48,15 +48,15 @@ gulp.task('stylus',function(){
 	//指定一个目录下及所有子目录下的文件
 	//gulp.src('./stylus/**/*.styl');
 
-	gulp.src('./stylus/**/*.styl')
+	return gulp.src('./stylus/**/*.styl')
 	//执行stylus编译
 		.pipe(stylus())
 		.pipe(gulp.dest('./public/css'))
 })
-
-gulp.task('logs',function(){
-	console.log('this is log')
-});
+//
+//gulp.task('logs',function(){
+//	console.log('this is log')
+//});
 gulp.task('es6',function(){
 	console.log('this is es6');
 });
@@ -103,4 +103,8 @@ gulp.task('minijs',['es6'],function(){
 //创建一个default任务
 gulp.task('default',function(){
 	console.log('this default')
-})
+});
+
+
+
+

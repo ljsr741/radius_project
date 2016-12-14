@@ -1,0 +1,173 @@
+$orange=#ea5404
+body
+	background-color #efefef
+	font-family Helvetica
+ul
+	margin 0
+	padding 0
+.tab_box
+	height 32px
+	padding 9px 0
+	background-color #fff
+.tab_bar
+	display flex
+	width 80%
+	height 30px
+	margin 0 auto
+	padding 0
+	list-style none
+	border-radius 5px
+	border 1px solid $orange
+	color $orange
+	font-weight bold
+	.tab_bar_cell
+		position relative
+		flex 1
+		line-height 30px
+		text-align center
+		&:after
+			content ''
+			position absolute
+			top 0
+			right 0
+			display block
+			width 1px
+			height 30px
+			background-color $orange
+		&:last-child:after
+			content ''
+			display none
+		&.active
+			background-color $orange
+			color white
+		span
+			vertical-align super
+			font-size 12px
+			line-height 5px
+.demand_cells
+	padding 15px
+.demand_cell
+	width 100%
+	min-height 100px
+	border-radius 5px
+	box-shadow 0 0 1px 1px #e0e0e0
+	line-height 30px
+	background-color #fff
+	margin-bottom 15px
+	.demand_title
+		display flex
+		height 30px
+		padding 0 10px
+		border-bottom 1px solid #cecece
+
+		.d_t_name
+			flex 1
+			color #323232
+		.d_t_tag
+			display inline-block
+			width 50px
+			height 16px
+			margin 7px 0
+			padding 2px 0
+			color #fff
+			background-color #15b755
+			border-radius 5px
+			line-height 16px
+			text-align center
+			font-style normal
+			font-size 12px
+			&.peo
+				background-color #0193e6
+			&.bus
+				background-color #97b715
+			&.change
+				background-color $orange
+	.demand_info
+		margin 0
+		padding 10px
+		line-height 1.2rem
+		color #323232
+	.txt
+		text-indent 1em
+		color #727272
+		font-size 14px
+	.add
+		color #727272
+		font-size 14px
+	.demand_footer
+		display flex
+		height 30px
+		line-height 30px
+		padding 5px 10px 15px 10px
+		.btn_detail
+			width 100px
+			height 30px
+			text-align center
+			background-color #efeff4
+			color #646464
+			border-radius 5px
+			border 1px solid #e1e1e1
+.text_time
+	flex 1
+	font-style normal
+	text-align right
+	font-size .8rem
+.msg_box
+	background #fff
+	width 100%
+	display flex
+	list-style none
+	height 70px
+	position fixed
+	bottom 0
+	.msg_cell
+		flex 1
+		background url("../../img/bottom_nor_icon04@2x.png") no-repeat top 15px center
+		background-size 20px
+		line-height 100px
+		text-align center
+		color #bababa
+	.ue
+		flex 1
+		background url("../../img/bottom_nor_icon03@2x.png") no-repeat top 15px center
+		background-size 20px
+		line-height 100px
+		text-align center
+		color #bababa
+	.mes
+		flex 1
+		background url("../../img/bottom_nor_icon02@2x.png") no-repeat top 15px center
+		background-size 20px
+		line-height 100px
+		text-align center
+		color #bababa
+	.active
+		color $orange
+		background url("../../img/bottom_press_icon02@2x.png") no-repeat top 15px center
+		background-size 20px
+		position relative
+		.right_icon
+			vertical-align super
+			font-size 12px
+			line-height 5px
+			padding 5px
+			border-radius 50%
+			background-color $orange
+			color white
+			position absolute
+			top 10px
+			right 20px
+	.me
+		flex 1
+		background url("../../img/bottom_nor_icon01@2x.png") no-repeat top 15px center
+		background-size 20px
+		line-height 100px
+		text-align center
+		color #bababa
+	.create
+		flex 1
+		background url("../../img/bottom_icon05@2x.png") no-repeat center
+		background-size 60%
+
+
+

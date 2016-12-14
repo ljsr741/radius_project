@@ -1,0 +1,58 @@
+body {
+  background-color: #efefef;
+  font-family: Microsoft YaHei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 2px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header_title {
+  flex: 1;
+  padding-right: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.ctrade_box {
+  margin-top: 10px;
+}
+.ctrade_box .ctrade_cells {
+  width: 100%;
+  background-color: #fff;
+  min-height: 115px;
+  box-shadow: 0 0 1px 1px #e0e0e0;
+  background-color: #fff;
+  margin: 5px 0;
+  display: flex;
+}
+.ctrade_box .ctrade_img {
+  flex: 1;
+  background: url("../../img/content_img_list@2x.png") no-repeat;
+  background-size: 100%;
+  margin: 10px 0 10px 15px;
+}
+.ctrade_box .ctrade_txt {
+  flex: 2;
+  font-size: 14px;
+  margin-left: 20px;
+  line-height: 23px;
+  padding-top: 10px;
+}
+.ctrade_box .ctrade_txt b {
+  color: #323232;
+}
+em {
+  text-align: right;
+}

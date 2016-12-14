@@ -1,0 +1,128 @@
+body {
+  background-color: #efefef;
+  font-family: Microsoft YaHei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 2px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header_title {
+  flex: 1;
+  padding-right: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.header_title {
+  color: #ed6928;
+  font-weight: bold;
+}
+.agent_title {
+  display: block;
+  color: #bdbdbe;
+  padding: 5px 0 5px 5px;
+  font-size: 12px;
+}
+.agent_content {
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.agent_content .agent_around {
+  width: 129px;
+  border-bottom: 1px solid #e1e1e1;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+.agent_content .agent_around .agent_image {
+  width: 64px;
+  height: 64px;
+  background: #878787;
+  border-radius: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+.agent_content .agent_around .agent_image span {
+  font-size: 12px;
+  line-height: 64px;
+  color: #fff;
+}
+.agent_content .agent_input {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  background-color: #efeff4;
+  border: none;
+  font-size: 12px;
+  padding: 10px 80px 8px 8px;
+  border-radius: 5px;
+}
+.agent-cells {
+  background: #fff;
+}
+.agent-cells .agent-block {
+  display: flex;
+}
+.agent-cells p {
+  display: block;
+  flex: 1;
+  background-color: #878787;
+  width: 106px;
+  margin: 10px 10px;
+  height: 65px;
+  text-align: center;
+  line-height: 65px;
+  border-radius: 5px;
+  color: #fff;
+}
+.onload {
+  background: #ed6928;
+  border: none;
+  display: block;
+  width: 98%;
+  margin: 0 auto;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 40px;
+}
+.broker-block {
+  margin: 0 auto;
+  width: 106px;
+  height: 65px;
+  border-radius: 5px;
+  background-color: #878787;
+  line-height: 65px;
+  text-align: center;
+}
+.broker-block .title {
+  font-size: 12px;
+  color: #fff;
+}
+.broker-book {
+  background-color: #fff;
+  padding: 10px 0;
+}
+.broker-book .title {
+  display: block;
+  width: 106px;
+  height: 65px;
+  margin: 0 auto;
+  background-color: #878787;
+  line-height: 65px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  border-radius: 5px;
+}

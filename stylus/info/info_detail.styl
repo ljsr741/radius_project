@@ -1,0 +1,106 @@
+@import "../head.styl"
+.info_box
+	padding 20px 15px
+	background-color #fff
+	.info_img
+		width 65px
+		height 65px
+		margin 0 auto
+		background url("../../img/head_image_03.png") no-repeat center
+		background-size 100%
+		border-radius 50%
+		margin-bottom 7px
+	.info_name
+		text-align center
+		line-height 24px
+		font-size 1rem
+		color #323232
+		font-weight bold
+	.info_desc
+		text-align center
+		line-height 18px
+		color #646464
+		font-size 14px
+		margin 6px 0px
+	.info_edit
+		width 6em
+		padding 1px 10px
+		color $orange
+		border 1px solid $orange
+		border-radius 3px
+		line-height 26px
+		font-size 12px
+		margin 0 auto
+.info_cells
+	margin-top 20px
+	background #fff
+	.info_cell
+		display flex
+		padding 0 15px
+		line-height 40px
+		border-bottom 1px solid #d6d7dc
+		.info-name
+			flex 3
+			font-size .875em
+			color #646464
+		.info-content
+			flex 4
+			text-indent 11px
+			color #323232
+	.image-cell
+		display flex
+		margin-top 20px
+		.image-block
+			font-size 12px
+			flex 1
+			margin 0px 11px
+			color #878787
+			text-align center
+			div
+				margin 0 auto
+				border-radius 3px
+				width 100%
+				height 64px
+				background #878787
+.edit_image
+	background url("../../img/head_image_03.png") no-repeat 5px
+	background-size 30px
+.edit_black
+	width 100%
+	height 100%
+	background-color rgba(0,0,0,0.3)
+	position absolute
+	top 0
+.edit_photo
+	width 100%
+	height 180px
+	background-color white
+	position absolute
+	bottom 0
+	.edit_cells
+		list-style none
+		margin 0
+		padding 0
+		.edit_cell
+			width 100%
+			height 60px
+			text-align center
+			line-height 60px
+			position relative
+			&:after
+				content ''
+				height 1px
+				width 80%
+				position absolute
+				bottom -1px
+				left 50%
+				margin-left -40%
+				z-index 5
+				display block
+				background-color #efefef
+			&:last-child:after
+				display none
+		.active
+			color $orange
+
+

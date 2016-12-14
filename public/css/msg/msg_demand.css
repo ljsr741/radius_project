@@ -1,0 +1,199 @@
+body {
+  background-color: #efefef;
+  font-family: Helvetica;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.tab_box {
+  height: 32px;
+  padding: 9px 0;
+  background-color: #fff;
+}
+.tab_bar {
+  display: flex;
+  width: 80%;
+  height: 30px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  border-radius: 5px;
+  border: 1px solid #ea5404;
+  color: #ea5404;
+  font-weight: bold;
+}
+.tab_bar .tab_bar_cell {
+  position: relative;
+  flex: 1;
+  line-height: 30px;
+  text-align: center;
+}
+.tab_bar .tab_bar_cell:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: #ea5404;
+}
+.tab_bar .tab_bar_cell:last-child:after {
+  content: '';
+  display: none;
+}
+.tab_bar .tab_bar_cell.active {
+  background-color: #ea5404;
+  color: #fff;
+}
+.tab_bar .tab_bar_cell span {
+  vertical-align: super;
+  font-size: 12px;
+  line-height: 5px;
+}
+.demand_cells {
+  padding: 15px;
+}
+.demand_cell {
+  width: 100%;
+  min-height: 100px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px 1px #e0e0e0;
+  line-height: 30px;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+.demand_cell .demand_title {
+  display: flex;
+  height: 30px;
+  padding: 0 10px;
+  border-bottom: 1px solid #cecece;
+}
+.demand_cell .demand_title .d_t_name {
+  flex: 1;
+  color: #323232;
+}
+.demand_cell .demand_title .d_t_tag {
+  display: inline-block;
+  width: 50px;
+  height: 16px;
+  margin: 7px 0;
+  padding: 2px 0;
+  color: #fff;
+  background-color: #15b755;
+  border-radius: 5px;
+  line-height: 16px;
+  text-align: center;
+  font-style: normal;
+  font-size: 12px;
+}
+.demand_cell .demand_title .d_t_tag.peo {
+  background-color: #0193e6;
+}
+.demand_cell .demand_title .d_t_tag.bus {
+  background-color: #97b715;
+}
+.demand_cell .demand_title .d_t_tag.change {
+  background-color: #ea5404;
+}
+.demand_cell .demand_info {
+  margin: 0;
+  padding: 10px;
+  line-height: 1.2rem;
+  color: #323232;
+}
+.demand_cell .txt {
+  text-indent: 1em;
+  color: #727272;
+  font-size: 14px;
+}
+.demand_cell .add {
+  color: #727272;
+  font-size: 14px;
+}
+.demand_cell .demand_footer {
+  display: flex;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 10px 15px 10px;
+}
+.demand_cell .demand_footer .btn_detail {
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  background-color: #efeff4;
+  color: #646464;
+  border-radius: 5px;
+  border: 1px solid #e1e1e1;
+}
+.text_time {
+  flex: 1;
+  font-style: normal;
+  text-align: right;
+  font-size: 0.8rem;
+}
+.msg_box {
+  background: #fff;
+  width: 100%;
+  display: flex;
+  list-style: none;
+  height: 70px;
+  position: fixed;
+  bottom: 0;
+}
+.msg_box .msg_cell {
+  flex: 1;
+  background: url("../../img/bottom_nor_icon04@2x.png") no-repeat top 15px center;
+  background-size: 20px;
+  line-height: 100px;
+  text-align: center;
+  color: #bababa;
+}
+.msg_box .ue {
+  flex: 1;
+  background: url("../../img/bottom_nor_icon03@2x.png") no-repeat top 15px center;
+  background-size: 20px;
+  line-height: 100px;
+  text-align: center;
+  color: #bababa;
+}
+.msg_box .mes {
+  flex: 1;
+  background: url("../../img/bottom_nor_icon02@2x.png") no-repeat top 15px center;
+  background-size: 20px;
+  line-height: 100px;
+  text-align: center;
+  color: #bababa;
+}
+.msg_box .active {
+  color: #ea5404;
+  background: url("../../img/bottom_press_icon02@2x.png") no-repeat top 15px center;
+  background-size: 20px;
+  position: relative;
+}
+.msg_box .active .right_icon {
+  vertical-align: super;
+  font-size: 12px;
+  line-height: 5px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #ea5404;
+  color: #fff;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.msg_box .me {
+  flex: 1;
+  background: url("../../img/bottom_nor_icon01@2x.png") no-repeat top 15px center;
+  background-size: 20px;
+  line-height: 100px;
+  text-align: center;
+  color: #bababa;
+}
+.msg_box .create {
+  flex: 1;
+  background: url("../../img/bottom_icon05@2x.png") no-repeat center;
+  background-size: 60%;
+}

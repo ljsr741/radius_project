@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  outline: none;
+}
+body {
+  background-color: #efefef;
+}
+body .header {
+  height: 35px;
+  background-color: #fff;
+  line-height: 35px;
+}
+body .header .icon-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 12px 18px;
+}
+body .header .header_title {
+  display: inline-block;
+  width: 100%;
+  color: #ed6928;
+  text-align: center;
+}
+body .form-list {
+  width: 100%;
+  margin-top: 15px;
+  background: #fff;
+}
+body .form-list .form-cell {
+  position: relative;
+  display: flex;
+  height: 40px;
+  line-height: 40px;
+}
+body .form-list .form-cell-name {
+  display: inline-block;
+  width: 50px;
+  padding-left: 40px;
+  background: url("../../img/content_ID_icon@2x.png") no-repeat left 10px center;
+  background-size: 25% 50%;
+}
+body .form-list .form-cell-name.cell-passwd {
+  background: url("../../img/content_password_icon@2x.png") no-repeat left 10px center;
+  background-size: 25% 50%;
+}
+body .form-list .form-cell .form-cell-input {
+  flex: 1;
+  border: none;
+}
+body .form-list .form-cell .btn_code {
+  width: 5rem;
+  font-size: 12px;
+  background-color: #ed6928;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin-right: 20px;
+  height: 25px;
+  line-height: 25px;
+  margin-top: 8px;
+}
+body .form-list .form-cell:after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 10px;
+  z-index: 5;
+  display: block;
+  height: 1px;
+  width: 97%;
+  background-color: #efefef;
+}
+body .form-list .form-cell .cell-code {
+  width: 70px;
+  background: url("../../img/content_verify_icon@2x.png") no-repeat left 10px center;
+  background-size: 20px 50%;
+}
+body .form-list .form-cell .cell-status {
+  width: 50px;
+  background: url("../../img/content_position_icon@2x.png") no-repeat left 10px center;
+  background-size: 20px 50%;
+}
+body .bt_box {
+  display: flex;
+  height: 40px;
+  margin-top: 20px;
+  padding: 0 15px;
+}
+body .bt_box .btn_login {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: #c7c7c7;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 40px;
+}
+body .bt_box .bt-reg {
+  padding-left: 10px;
+  color: #ed6928;
+  flex: 1;
+  color: #000;
+}
+body .bt_box .bt-reg span {
+  color: #ed6928;
+  text-decoration: underline;
+}
+body .bt_box .bt-passwd {
+  padding-right: 10px;
+}
