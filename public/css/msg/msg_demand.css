@@ -1,5 +1,28 @@
 body {
   background-color: #efefef;
+  font-family: Microsoft YaHei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 2px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header_title {
+  flex: 1;
+  padding-right: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+body {
+  background-color: #efefef;
   font-family: Helvetica;
 }
 ul {
@@ -19,8 +42,8 @@ ul {
   padding: 0;
   list-style: none;
   border-radius: 5px;
-  border: 1px solid #ea5404;
-  color: #ea5404;
+  border: 1px solid #ed6928;
+  color: #ed6928;
   font-weight: bold;
 }
 .tab_bar .tab_bar_cell {
@@ -37,14 +60,14 @@ ul {
   display: block;
   width: 1px;
   height: 30px;
-  background-color: #ea5404;
+  background-color: #ed6928;
 }
 .tab_bar .tab_bar_cell:last-child:after {
   content: '';
   display: none;
 }
 .tab_bar .tab_bar_cell.active {
-  background-color: #ea5404;
+  background-color: #ed6928;
   color: #fff;
 }
 .tab_bar .tab_bar_cell span {
@@ -95,7 +118,7 @@ ul {
   background-color: #97b715;
 }
 .demand_cell .demand_title .d_t_tag.change {
-  background-color: #ea5404;
+  background-color: #ed6928;
 }
 .demand_cell .demand_info {
   margin: 0;
@@ -167,7 +190,7 @@ ul {
   color: #bababa;
 }
 .msg_box .active {
-  color: #ea5404;
+  color: #ed6928;
   background: url("../../img/bottom_press_icon02@2x.png") no-repeat top 15px center;
   background-size: 20px;
   position: relative;
@@ -178,7 +201,7 @@ ul {
   line-height: 5px;
   padding: 5px;
   border-radius: 50%;
-  background-color: #ea5404;
+  background-color: #ed6928;
   color: #fff;
   position: absolute;
   top: 10px;

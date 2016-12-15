@@ -21,16 +21,11 @@ body {
   line-height: 50px;
   text-align: center;
 }
-p {
-  margin: 0;
-  padding: 0;
-}
 .ctrade_box {
   margin-top: 10px;
 }
 .ctrade_box .ctrade_cells {
   width: 100%;
-  background-color: #fff;
   min-height: 115px;
   box-shadow: 0 0 1px 1px #e0e0e0;
   background-color: #fff;
@@ -38,21 +33,92 @@ p {
   display: flex;
 }
 .ctrade_box .ctrade_img {
-  flex: 1;
+  flex: 3;
   background: url("../../img/content_img_list@2x.png") no-repeat;
   background-size: 100%;
   margin: 10px 0 10px 15px;
 }
 .ctrade_box .ctrade_txt {
-  flex: 2;
-  font-size: 14px;
-  margin-left: 20px;
-  line-height: 23px;
-  padding-top: 10px;
+  flex: 4;
+  font-size: 12px;
+  margin-left: 15px;
+  line-height: 22px;
 }
-.ctrade_box .ctrade_txt b {
+.ctrade-title {
+  display: flex;
+  padding-top: 10px;
+  position: relative;
+}
+.ctrade-title .ctrade-pic:after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -15px;
+  background: url("../../img/collect_icon_press@2x.png") no-repeat right center;
+  background-size: 100%;
+}
+.ctrade-title span {
+  font-size: 14px;
+  flex: 3;
+  color: #323232;
+  font-weight: bold;
+}
+.ctrade-title em {
+  flex: 1;
+  font-style: normal;
+}
+.ctrade-address {
+  color: #646464;
+}
+.ctrade-bus {
+  border: 1px solid #ed6928;
+  border-radius: 3px;
+  padding: 1px 4px;
+  color: #ed6928;
+}
+.ctrade-price {
+  display: flex;
+  font-size: 12px;
+  color: #727272;
+}
+.ctrade-price em {
+  color: #ed6928;
+  font-style: normal;
+  font-size: 14px;
+  margin-right: 1px;
+}
+.ctrade-price .left_price {
+  flex: 3;
+}
+.ctrade-price .right_price {
+  flex: 2;
+}
+.s_box {
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  margin-top: 6px;
+}
+.s_box .s_left {
+  flex: 1;
+  text-align: center;
+  margin: 0 auto;
+  border-right: 1px solid #d6d7dc;
+  line-height: 50px;
   color: #323232;
 }
-em {
-  text-align: right;
+.s_box .s_right {
+  flex: 1;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 auto;
+}
+.s_box .ctrade-hou {
+  color: #ed6928;
+  border-bottom: 1px solid #ed6928;
 }

@@ -1,0 +1,85 @@
+.radio_block {
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+}
+.radio_block .radio_btn {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin: 4px;
+  border: 2px solid #f66;
+  border-radius: 50%;
+  vertical-align: bottom;
+  line-height: 12px;
+}
+.radio_block.selected .icon {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 2px;
+  border: 2px solid transparent;
+  background-color: #f66;
+  border-radius: 50%;
+}
+.select_box {
+  width: 80%;
+  position: relative;
+}
+.select_box .select_title {
+  position: relative;
+  height: 40px;
+  padding: 0 10px;
+  background-color: #efefef;
+  border: 1px solid #cecece;
+  line-height: 40px;
+  border-radius: 5px;
+}
+.select_box .select_title:before,
+.select_box .select_title:after {
+  content: '';
+  position: absolute;
+  right: 23px;
+  top: 12px;
+  display: block;
+  width: 2px;
+  height: 12px;
+  background-color: #ababab;
+  transform: rotate(-45deg);
+}
+.select_box .select_title:after {
+  right: 15px;
+  transform: rotate(45deg);
+}
+.select_box .select_list {
+  display: none;
+  list-style: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 38px;
+  border: 1px solid #cecece;
+  border-radius: 0 0 5px 5px;
+  margin: 0;
+  padding: 0;
+  background-color: #efefef;
+}
+.select_box .select_list .select_li {
+  height: 40px;
+  padding: 0 10px;
+  line-height: 40px;
+  position: relative;
+}
+.select_box .select_list .select_li:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 0;
+  display: block;
+  height: 1px;
+  background-color: #cecece;
+}
+.select_box .select_list .select_li:last-child:after {
+  display: none;
+}

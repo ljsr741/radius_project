@@ -1,29 +1,89 @@
 @import "../head.styl"
-p
-	margin 0
-	padding 0
+
 .ctrade_box
 	margin-top 10px
 	.ctrade_cells
 		width 100%
-		background-color white
 		min-height 115px
 		box-shadow 0 0 1px 1px #e0e0e0
 		background-color #fff
 		margin 5px 0
 		display flex
 	.ctrade_img
-		flex 1
+		flex 3
 		background url("../../img/content_img_list@2x.png") no-repeat
 		background-size 100%
 		margin 10px 0 10px 15px
 	.ctrade_txt
-		flex 2
+		flex 4
+		font-size 12px
+		margin-left 15px
+		line-height 22px
+
+.ctrade-title
+	display flex
+	padding-top 10px
+	position relative
+	.ctrade-pic:after
+		content ''
+		display block
+		width 16px
+		height 30px
+		position absolute
+		top 50%
+		right 15px
+		margin-top -15px
+		background url("../../img/collect_icon_press@2x.png") no-repeat right center
+		background-size 100%
+	span
 		font-size 14px
-		margin-left 20px
-		line-height 23px
-		padding-top 10px
-		b
-			color #323232
-em
-	text-align right
+		flex 3
+		color #323232
+		font-weight bold
+	em
+
+		flex 1
+		font-style normal
+.ctrade-address
+	color #646464
+.ctrade-bus
+	border 1px solid $orange
+	border-radius 3px
+	padding 1px 4px
+	color $orange
+.ctrade-price
+	display flex
+	font-size 12px
+	color #727272
+	em
+		color $orange
+		font-style normal
+		font-size 14px
+		margin-right 1px
+	.left_price
+		flex 3
+	.right_price
+		flex 2
+
+.s_box
+	background-color #fff
+	width 100%
+	height 50px
+	display flex
+	margin-top 6px
+	.s_left
+		flex 1
+		text-align center
+		margin 0 auto
+		border-right 1px solid #d6d7dc
+		line-height 50px
+		color #323232
+	.s_right
+		flex 1
+		line-height 50px
+		text-align center
+		margin 0 auto
+	.ctrade-hou
+		color $orange
+		border-bottom 1px solid $orange
+

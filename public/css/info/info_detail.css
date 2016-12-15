@@ -61,6 +61,7 @@ body {
 .info_cells {
   margin-top: 20px;
   background: #fff;
+  font-size: 14px;
 }
 .info_cells .info_cell {
   display: flex;
@@ -75,8 +76,17 @@ body {
 }
 .info_cells .info_cell .info-content {
   flex: 4;
-  text-indent: 11px;
+  text-indent: 10px;
   color: #323232;
+}
+.info_cells .info_cell .left_edit {
+  flex: 10;
+}
+.info_cells .info_cell .person {
+  font-size: 0.78rem;
+  text-indent: 8px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .info_cells .image-cell {
   display: flex;
@@ -143,4 +153,19 @@ body {
 }
 .edit_photo .edit_cells .active {
   color: #ed6928;
+}
+.edit_cel {
+  position: relative;
+}
+.edit_cel:after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 30px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -15px;
+  background: url("../../img/content_list_right_icon@2x.png") no-repeat right center;
+  background-size: 50%;
 }

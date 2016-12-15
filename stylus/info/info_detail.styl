@@ -34,6 +34,7 @@
 .info_cells
 	margin-top 20px
 	background #fff
+	font-size 14px
 	.info_cell
 		display flex
 		padding 0 15px
@@ -45,8 +46,16 @@
 			color #646464
 		.info-content
 			flex 4
-			text-indent 11px
+			text-indent 10px
 			color #323232
+		.left_edit
+			flex 10
+		.person
+
+			font-size .78rem
+			text-indent 8px
+			white-space nowrap
+			overflow hidden
 	.image-cell
 		display flex
 		margin-top 20px
@@ -102,5 +111,18 @@
 				display none
 		.active
 			color $orange
+.edit_cel
+	position relative
+.edit_cel:after
+	content ''
+	display block
+	width 16px
+	height 30px
+	position absolute
+	top 50%
+	right 15px
+	margin-top -15px
+	background url("../../img/content_list_right_icon@2x.png") no-repeat right center
+	background-size 50%
 
 
