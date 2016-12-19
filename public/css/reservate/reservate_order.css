@@ -1,0 +1,225 @@
+body {
+  background-color: #efefef;
+  font-family: Microsoft YaHei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 2px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header_title {
+  flex: 1;
+  padding-right: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+.change {
+  padding-left: 50px;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+.reservate_title {
+  display: block;
+  color: #bdbdbe;
+  padding: 10px 0 10px 10px;
+  font-size: 12px;
+}
+.reservate_cells {
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  position: relative;
+}
+.reservate_cell {
+  display: flex;
+}
+.reservate_cell .reservate_img {
+  width: 50px;
+  height: 50px;
+  background: url("../../img/content_img_user@2x.png") top 5px left 8px no-repeat;
+  background-size: 80%;
+}
+.reservate_cell p {
+  margin-top: 10px;
+  margin-left: 5px;
+  color: #323232;
+}
+.reservate_cell p:after {
+  content: '|';
+  display: block;
+  margin-right: 20px;
+  position: absolute;
+  right: 35px;
+  top: 14px;
+}
+.reservate_cell span {
+  font-size: 12px;
+  margin-left: 5px;
+  color: #646464;
+}
+.reservate_call {
+  width: 36px;
+  height: 35px;
+  background: url("../../img/content_icon_call@2x.png") no-repeat;
+  background-size: 50%;
+  position: absolute;
+  right: 4px;
+  top: 16px;
+}
+.reservate_content {
+  background-color: #fff;
+  height: 80px;
+}
+.reservate_content .reservate_txt {
+  display: flex;
+}
+.reservate_content .reservate_txt .reservate_text {
+  flex: 1;
+  line-height: 20px;
+  margin: 10px 0 10px 10px;
+}
+.reservate_content .reservate_txt .reservate_text .top_txt {
+  color: #323232;
+}
+.reservate_content .reservate_txt .reservate_text p {
+  color: #646464;
+  font-size: 14px;
+}
+.reservate_content .reservate_rtext {
+  flex: 1;
+  color: #646464;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 30px;
+}
+.super {
+  vertical-align: super;
+  font-size: 12px;
+  line-height: 5px;
+}
+.date {
+  line-height: 50px;
+  color: #323232;
+  margin-left: 10px;
+}
+.reservate_date {
+  display: flex;
+  border-top: 1px solid #cecece;
+}
+.reservate_date .reservate_text {
+  flex: 1;
+  height: 50px;
+  margin-left: 10px;
+  color: #323232;
+}
+.reservate_date .reservate_text p {
+  margin-top: 5px;
+}
+.reservate_date .reservate_text .date_txt {
+  font-size: 12px;
+  line-height: 5px;
+  margin-left: 6px;
+}
+.reservate_date span {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  color: #323232;
+  font-size: 14px;
+  line-height: 50px;
+  text-align: right;
+  margin-right: 10px;
+}
+.p {
+  border: none;
+}
+.reservate_footer {
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  margin-top: 100px;
+  color: #e8630c;
+}
+.reservate_footer .footer_list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.reservate_footer .footer_list .footer_li {
+  flex: 1;
+  text-align: center;
+  line-height: 50px;
+}
+.cancel {
+  background-color: #fff;
+  width: 97%;
+  padding: 5px 0 5px 10px;
+}
+.cancel_list {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+}
+.cancel_list .cancel_li {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #b4b4b4;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+.cancel_list span {
+  color: #323232;
+  font-size: 14px;
+  display: block;
+}
+.cancel_footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+}
+button {
+  width: 96%;
+  background-color: #ea5404;
+  height: 40px;
+  border: none;
+  margin: 0 auto;
+  color: #fff;
+  border-radius: 5px;
+}
+.footer_span {
+  display: block;
+  line-height: 50px;
+  font-size: 14px;
+  text-align: right;
+  margin-right: 10px;
+  color: #cecece;
+}
+.delete_done {
+  line-height: 50px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #ed6928;
+}
+.delete_text {
+  line-height: 50px;
+  margin-left: 10px;
+  font-size: 14px;
+}
+.textarea {
+  width: 95%;
+  height: 80px;
+  background-color: #efeff4;
+  border-radius: 3px;
+}

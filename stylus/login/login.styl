@@ -74,6 +74,17 @@ body
 				width 50px
 				background url("../../img/content_position_icon@2x.png") no-repeat left 10px center
 				background-size 20px 50%
+				&:after
+					content ''
+					display block
+					background url("../../img/nav_back_icon@2x.png") no-repeat
+					background-size 40%
+					width 20px
+					height 36px
+					transform rotate(-90deg)
+					position absolute
+					right 0
+					bottom 7px
 	.bt_box
 		display flex
 		height 40px
@@ -91,7 +102,7 @@ body
 			line-height 40px
 		.bt-reg
 			padding-left 10px
-			color $orange
+
 			flex 1
 
 			color black
@@ -101,4 +112,25 @@ body
 				text-decoration underline
 		.bt-passwd
 			padding-right 10px
+.register_pull
+	width 4.5em
+	height 150px
+	position absolute
+	right 10px
+	top 25px
+	border-radius 0 0 5px 5px
+	background-color #222222
+	.register_ul
+		list-style none
+		margin 0
+		padding 0
+
+		.register_li
+			width 4.5em
+			height 20px
+			text-align center
+
+			line-height 20px
+			margin-top 1px
+
 

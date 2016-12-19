@@ -61,6 +61,33 @@ function autoSwipe(){
 }
 autoSwipe();
 
-$('')
+var $queyrBlock = $('.query_block');
+$queyrBlock.on('tap', function(){
+    var $self = $(this);
+    var index = $self.index();
+    console.log(index);
+    if($self.hasClass('active')){
+        $self.removeClass('active');
+        $('.down-box').eq(index).hide();
+    }else{
+        $queyrBlock.removeClass('active');
+        $self.addClass('active');
+        $('.down-box').hide().eq(index).show();
+    }
+});
+
+$('.query_price').on('tap', function(){
+    var $self = $(this);
+    if($self.hasClass('active-down')){
+        console.log('up');
+        $self.removeClass('active-down').addClass('active-up');
+    }else if($self.hasClass('active-up')){
+        console.log('normal');
+        $self.removeClass('active-up');
+    }else{
+        console.log('down');
+        $self.addClass('active-down');
+    }
+})
 
 

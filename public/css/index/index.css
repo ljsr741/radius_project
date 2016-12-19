@@ -28,6 +28,7 @@ body {
   width: 100%;
   color: #fff;
   background-color: transparent;
+  border: none;
 }
 .header .icon-back {
   width: 65px;
@@ -54,6 +55,7 @@ body {
   text-align: center;
   line-height: 30px;
   color: #999;
+  font-size: 14px;
 }
 .search_box .search_input .icon-search {
   display: inline-block;
@@ -84,7 +86,8 @@ body {
   float: left;
   width: 375px;
   height: 320px;
-  background-color: #33acfe;
+  background: url("../../img/banner_img@2x.png") no-repeat;
+  background-size: 100%;
 }
 .slider_block:nth-child(2) {
   background-color: #0000ed;
@@ -154,4 +157,16 @@ body {
 }
 .block_box .info_box {
   flex: 5;
+}
+.down-box {
+  width: 100%;
+  background: #f00;
+  display: none;
+  position: relative;
+  z-index: 10;
+}
+.down-box ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

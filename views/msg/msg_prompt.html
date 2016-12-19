@@ -12,8 +12,8 @@
 <body>
 	<header class="tab_box">
 		<ul class="tab_bar">
-			<li class="tab_bar_cell">消息</li>
-			<li class="tab_bar_cell active">通知</li>
+			<li class="tab_bar_cell" onclick="msg_message()">消息</li>
+			<li class="tab_bar_cell active" onclick="tomsg_prompt()">通知</li>
 			<li class="tab_bar_cell ">需求<span>3</span></li>
 		</ul>
 	</header>
@@ -30,4 +30,13 @@
 		</section>
 		</article>
 </body>
+<script>
+function msg_message(){
+	location.href = "msg_message.html"
+}
+function tomsg_prompt(){
+	location.href = "msg_prompt.html"
+}
+
+</script>
 </html>

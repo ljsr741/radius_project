@@ -10,8 +10,35 @@
 	<link rel="stylesheet" href="../../public/css/component/component.css">
 </head>
 <body>
+	<header class="header">
+		<span class="txt_delete">取消</span>
+		<span class="header_title">发布房源</span>
+	</header>
+	<div class="ponent">
+		<input type="text" placeholder="搜索想要发布的大厦" class="search_new">
+		<span class="plus_img"></span>
+		<span class="plus">新增楼盘</span>
+	</div>
+	<div class="build_message">
+		<span class="ponent_point"><span>大厦信息</span></span>
+		<ul class="ponent_cells">
+			<li class="ponent_cell">商圈:<span class="ponent_line">浦东-八佰伴</span></li>
+			<li class="ponent_cell">物业:<span class="ponent_line">上海浦江物业有限公司</span></li>
+			<li class="ponent_cell">层数:<span class="ponent_line">23层</span></li>
+			<li class="ponent_cell">层高:<span class="ponent_line">标准4.5米，净高2.75米，大堂14.5米</span></li>
+			<li class="ponent_cell">车位:<span class="ponent_line">地上30个，地下400个，1250元/月</span></li>
+			<li class="ponent_cell">电梯:<span class="ponent_line">客梯8部，货梯2部，三菱电梯</span></li>
+			<li class="ponent_cell">空调:<span class="ponent_line">集中式中央空调</span></li>
+			<li class="ponent_cell diff">入驻企业:<span class="ponent_line">顺诚商业地产(房地产/建筑)、大大集团</span></li>
+			<li class="ponent_cell">地址:<span class="ponent_line">距离世纪达到站步行7分钟</span></li>
+		</ul>
+	</div>
+	<div class="house_message">
+		<span class="ponent_point point"><span>房源信息</span></span>
+
 	<div class="radio_box">
-		<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>整层</span></div>
+		<p>请选择发布房源的属性</p>
+		<div class="radio_block selected"><span class="radio_btn"><i class="icon"></i></span><span>整层</span></div>
 		<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>整栋</span></div>
 		<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>众创空间</span></div>
 		<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>商务中心</span></div>
@@ -27,6 +54,7 @@
 			<li class="select_li" data-val="2">标准交付</li>
 			<li class="select_li" data-val="3">简装</li>
 		</ul>
+	</div>
 	</div>
 	<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 	<script src="../../public/libs/zepto/touch.js"></script>

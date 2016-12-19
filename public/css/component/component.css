@@ -1,3 +1,26 @@
+body {
+  background-color: #efefef;
+  font-family: Microsoft YaHei;
+}
+.header {
+  display: flex;
+  height: 50px;
+  background-color: #fff;
+  border-bottom: 2px solid #d6d7dc;
+}
+.header .icon-back {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
+  background-size: 25%;
+}
+.header .header_title {
+  flex: 1;
+  padding-right: 50px;
+  line-height: 50px;
+  text-align: center;
+}
 .radio_block {
   display: inline-block;
   height: 24px;
@@ -5,21 +28,21 @@
 }
 .radio_block .radio_btn {
   display: inline-block;
-  height: 12px;
-  width: 12px;
+  height: 6px;
+  width: 6px;
   margin: 4px;
-  border: 2px solid #f66;
+  border: 1px solid #eb5c10;
   border-radius: 50%;
   vertical-align: bottom;
   line-height: 12px;
 }
 .radio_block.selected .icon {
   display: inline-block;
-  width: 4px;
-  height: 4px;
-  margin: 2px;
-  border: 2px solid transparent;
-  background-color: #f66;
+  width: 2px;
+  height: 2px;
+  margin: 1px;
+  border: 1px solid transparent;
+  background-color: #eb5c10;
   border-radius: 50%;
 }
 .select_box {
@@ -82,4 +105,90 @@
 }
 .select_box .select_list .select_li:last-child:after {
   display: none;
+}
+.txt_delete {
+  line-height: 50px;
+  margin-left: 10px;
+}
+.ponent {
+  margin: 10px;
+}
+.search_new {
+  height: 30px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: url("../../img/banner_icon_search@2x.png") 10px 8px no-repeat;
+  background-size: 8%;
+  font-size: 14px;
+  text-indent: 2.5em;
+  background-color: #fff;
+}
+.plus_img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: url("../../img/content_plus_icon@2x.png") 5px 8px no-repeat;
+  background-size: 50%;
+}
+.plus {
+  font-size: 14px;
+}
+.build_message {
+  background-color: #fff;
+  height: 310px;
+  padding: 10px 0 0 10px;
+  width: 97%;
+}
+.build_message .ponent_cells {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.build_message .ponent_cell {
+  font-size: 14px;
+  text-indent: 2.5em;
+}
+.build_message .diff {
+  text-indent: 5px;
+}
+.build_message .ponent_line {
+  font-size: 14px;
+  padding-left: 5px;
+  color: #d6d7dc;
+}
+.build_message .ponent_line:after {
+  content: '';
+  height: 1px;
+  width: 70%;
+  background-color: #b4b4b4;
+  margin-left: 65px;
+  display: block;
+}
+.ponent_point {
+  color: #bee949;
+  display: list-item;
+  list-style-type: disc;
+  margin-left: 1em;
+}
+.ponent_point span {
+  color: #646464;
+}
+.house_message {
+  background-color: #fff;
+  height: 310px;
+  padding: 10px 0 0 10px;
+  width: 97%;
+  margin-top: 15px;
+}
+.house_message .point {
+  color: #49cde9;
+}
+p {
+  margin: 0;
+  padding: 0;
+  color: #646464;
+  font-size: 14px;
+  text-indent: 2em;
+  line-height: 20px;
 }

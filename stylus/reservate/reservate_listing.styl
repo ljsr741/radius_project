@@ -1,0 +1,110 @@
+@import "../head.styl"
+.header_title
+  padding-left 50px
+.listing_cells
+  width 100%
+  background-color white
+  .listing_cell
+    height 120px
+    margin 10px
+    display flex
+    color #727272
+    font-size 14px
+    position relative
+  .listing_img
+    flex 2
+    background url("../../img/content_img@2x.png") no-repeat top 10px center
+    background-size 100%
+  .listing_text
+    flex 4
+    margin-left 10px
+    .d_t_name
+      display flex
+      margin-top 10px
+      span
+        flex 2
+      .listing_icon
+        flex 1
+        position relative
+        font-size 12px
+        color #cecece
+        &:before
+          content ''
+          display block
+          height 20px
+          width 20px
+          background url("../../img/content_icon@2x.png") no-repeat
+          background-size 50%
+          position absolute
+          left -13px
+          top 2px
+    .d_t_txt
+      text-indent 1em
+    .d_t_time
+      color #de6d00
+      font-size 12px
+button
+  width 50px
+  height 20px
+  position absolute
+  bottom 10px
+  right 0
+  background-color #ea5404
+  border none
+  color white
+  border-radius 3px
+  font-size 12px
+.relate
+  position absolute
+  bottom 10px
+  right 0
+  font-size 12px
+.listing_menu
+  width 100%
+  background-color white
+  height 50px
+  position fixed
+  bottom 0
+  .listing_box
+    list-style none
+    display flex
+    margin 0
+    padding 0
+    .listing_li
+      flex 1
+      background url("../../img/bottom_nor_icon04@2x.png") no-repeat top 9px center
+      background-size 20px
+      line-height 70px
+      text-align center
+      color #bababa
+      font-size 12px
+    .ue
+      flex 1
+      background url("../../img/bottom_nor_icon03@2x.png") no-repeat top 9px center
+      background-size 20px
+      line-height 70px
+      text-align center
+      color #bababa
+    .mes
+      flex 1
+      background url("../../img/bottom_nor_icon02@2x.png") no-repeat top 9px center
+      background-size 20px
+      line-height 70px
+      text-align center
+      color #bababa
+    .active
+      color $orange
+      background url("../../img/bottom_press_icon02@2x.png") no-repeat top 9px center
+      background-size 20px
+      position relative
+    .me
+      flex 1
+      background url("../../img/bottom_nor_icon01@2x.png") no-repeat top 9px center
+      background-size 20px
+      line-height 70px
+      text-align center
+      color #bababa
+    .create
+      flex 1
+      background url("../../img/bottom_icon05@2x.png") no-repeat top 9px center
+      background-size 60%
