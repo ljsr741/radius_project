@@ -35,11 +35,7 @@ $areaList.on('tap',function(){
 	//}
 
 });
-
-
-var $txtdelete=$('.txt_delete');
-$txtdelete.on('tap',function(){
-	if(window.confirm("Do you really want to leave?")) {
-		window.location.href='../component/component.html'
-	}
-});
+var $relese=$('#btn_relese');
+$relese.on('tap',function(){
+	window.location.href='../component/component_confirm.html'
+})

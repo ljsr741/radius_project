@@ -319,3 +319,41 @@ p {
   height: 100%;
   position: fixed;
 }
+.btn_done {
+  width: 230px;
+  height: 100px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -115px;
+  border-radius: 10px;
+  z-index: 5;
+}
+.btn_done p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: block;
+}
+.btn_done .border_p {
+  height: 55px;
+  border-bottom: 1px solid #d6d7dc;
+  line-height: 55px;
+  color: #323232;
+  font-size: 14px;
+}
+.btn_done .confirm_p {
+  height: 45px;
+  line-height: 45px;
+  color: #ea5404;
+}
+.bg_color {
+  background-color: #000;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+}
