@@ -38,4 +38,9 @@ $areaList.on('tap',function(){
 var $relese=$('#btn_relese');
 $relese.on('tap',function(){
 	window.location.href='../component/component_confirm.html'
-})
+});
+
+var $delete=$('.txt_delete');
+$delete.on('tap',function(){
+	window.location.href='../component/component_delete.html'
+});

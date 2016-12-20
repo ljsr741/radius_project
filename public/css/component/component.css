@@ -330,9 +330,9 @@ p {
   margin-left: -115px;
   border-radius: 10px;
   z-index: 5;
+  text-align: center;
 }
 .btn_done p {
-  margin: 0;
   padding: 0;
   text-align: center;
   display: block;
@@ -348,6 +348,27 @@ p {
   height: 45px;
   line-height: 45px;
   color: #ea5404;
+  display: inline-block;
+}
+.btn_done .delete_estate {
+  width: 50%;
+  display: inline-block;
+}
+.btn_done .tates {
+  width: 50%;
+  display: inline-block;
+  color: #949494;
+  position: relative;
+}
+.btn_done .tates:after {
+  content: '';
+  width: 1px;
+  height: 45px;
+  background-color: #d6d7dc;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .bg_color {
   background-color: #000;
