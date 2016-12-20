@@ -378,3 +378,35 @@ p {
   position: fixed;
   z-index: 0;
 }
+.add_cell {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.add_cell input {
+  width: 90%;
+  height: 30px;
+  border-radius: 3px;
+  border: 1px solid #d6d7dc;
+  font-size: 14px;
+  text-indent: 1em;
+}
+.add_cell .btn_add {
+  width: 90%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #d6d7dc;
+  font-size: 14px;
+  color: #ed6928;
+  background-color: #fff;
+  margin-top: 5px;
+}
+.rel_add {
+  width: 85%;
+  resize: none;
+  height: 150px;
+  border-radius: 3px;
+  border: 1px solid #d6d7dc;
+  font-size: 14px;
+  padding: 10px;
+}

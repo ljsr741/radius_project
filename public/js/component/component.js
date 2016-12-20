@@ -44,3 +44,14 @@ var $delete=$('.txt_delete');
 $delete.on('tap',function(){
 	window.location.href='../component/component_delete.html'
 });
+
+var $add=$('.btn_add');
+$add.on('tap',function(){
+	window.location.href='../component/component_estate.html'
+});
+
+
+var $drop=$('.delete_text');
+$drop.on('tap',function(){
+	window.location.href='../component/component_drop.html'
+});
