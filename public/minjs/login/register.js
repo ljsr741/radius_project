@@ -1,1 +1,1 @@
-var $passWd=$(".bt-passwd");$passWd.on("tap",function(){window.onload=function(){location.href="../login/password.html"}});
+var $phone=$("#input");$phone.on("tap",function(){var n=$phone.value;console.log(n);var o=/^1[34578]\d{9}$/;o.test(n)||alert("手机号码格式错误")});

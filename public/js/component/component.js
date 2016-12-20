@@ -22,4 +22,24 @@ $selectList.find('.select_li').on('tap',function(){
 	var val=$self.data('val');
 	$selectTitle.text(text ).data('val',val);
 	$parent.hide();
-})
+});
+
+var $areaList=$('.area_cell');
+$areaList.on('tap',function(){
+	var $self=$(this);
+	if(!$self.hasClass('selected')){
+		$areaList.removeClass('selected');
+		$self.addClass('selected');
+	}//else{
+	//	$self.removeClass('selected')
+	//}
+
+});
+
+
+var $txtdelete=$('.txt_delete');
+$txtdelete.on('tap',function(){
+	if(window.confirm("Do you really want to leave?")) {
+		window.location.href='../component/component.html'
+	}
+});

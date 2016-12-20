@@ -13,6 +13,9 @@
 	<link rel="stylesheet" href="../../public/css/component/component.css">
 </head>
 <body>
+	<div class="footer_top">
+	<div class="confirm"></div>
+	</div>
 	<header class="header">
 		<span class="txt_delete">取消</span>
 		<span class="header_title">发布房源</span>
@@ -39,36 +42,36 @@
 	<div class="house_message">
 		<span class="ponent_point point"><span>房源信息</span></span>
 		<div class="radio_box">
-		<p>请选择发布房源的属性</p>
-		<div class="radio_block selected"><span class="radio_btn"><i class="icon"></i></span><span>整层</span></div>
-		<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>整栋</span></div>
-		<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>众创空间</span></div>
-		<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>商务中心</span></div>
-		<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>创意产业园</span></div>
-		<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>写字楼</span></div>
-		<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>工位</span></div>
-	</div>
-	<div class="ponent_area">
-		<div class="area_cells">
-	<span>房源面积</span>
-		<input type="text" placeholder="20" class="area_line"><span class="super_span">m<span class="super">2</span></span>
-	</div>
-		<div class="area_cells">
-			<span>房源单价</span>
-			<input type="text" placeholder="6.5" class="area_line"><span class="super_span">元/m<span class="super">2</span>/天</span>
+			<p>请选择发布房源的属性</p>
+			<div class="radio_block selected"><span class="radio_btn"><i class="icon"></i></span><span>整层</span></div>
+			<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>整栋</span></div>
+			<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>众创空间</span></div>
+			<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>商务中心</span></div>
+			<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>创意产业园</span></div>
+			<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>写字楼</span></div>
+			<div class="radio_block"><span class="radio_btn"><i class="icon"></i></span><span>工位</span></div>
 		</div>
-		<div class="area_cells">
-			<span class="deliver">交付状态</span>
-	<div class="select_box">
-		<div class="select_title" data-val="1">标准交付</div>
-		<ul class="select_list">
-			<li class="select_li" data-val="1">毛坯交付</li>
-			<li class="select_li" data-val="2">标准交付</li>
-			<li class="select_li" data-val="3">简装</li>
-		</ul>
-	</div>
-	</div>
-	</div>
+		<div class="ponent_area">
+			<div class="area_cells">
+				<span>房源面积</span>
+				<input type="text" placeholder="20" class="area_line"><span class="super_span">m<span class="super">2</span></span>
+			</div>
+			<div class="area_cells">
+				<span>房源单价</span>
+				<input type="text" placeholder="6.5" class="area_line"><span class="super_span">元/m<span class="super">2</span>/天</span>
+			</div>
+			<div class="area_cells">
+				<span class="deliver">交付状态</span>
+				<div class="select_box">
+					<div class="select_title" data-val="1">标准交付</div>
+					<ul class="select_list">
+						<li class="select_li" data-val="1">毛坯交付</li>
+						<li class="select_li" data-val="2">标准交付</li>
+						<li class="select_li" data-val="3">简装</li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
 		<div class="area_cells">
 			<span>交付日期</span>
@@ -107,13 +110,14 @@
 		<div class="add">
 			<span class="add_img"></span>
 
-		    <input type="file" class="file">
+			<input type="file" class="file">
 			<span class="add_txt">添加图片</span>
-	</div>
+		</div>
 	</div>
 	<div class="btn_footer">
-	<button class="btn">确认发布</button>
+		<button class="btn">确认发布</button>
 	</div>
+
 	<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 	<script src="../../public/libs/zepto/touch.js"></script>
 	<script src="../../public/js/component/component.js"></script>

@@ -21,10 +21,15 @@ body {
   line-height: 50px;
   text-align: center;
 }
+.radio_box {
+  padding-left: 30px;
+  border-bottom: 1px solid #e1e1e1;
+}
 .radio_block {
   display: inline-block;
   height: 24px;
-  line-height: 24px;
+  line-height: 15px;
+  margin-left: 10px;
 }
 .radio_block .radio_btn {
   display: inline-block;
@@ -34,36 +39,37 @@ body {
   border: 1px solid #eb5c10;
   border-radius: 50%;
   vertical-align: bottom;
-  line-height: 12px;
 }
 .radio_block.selected .icon {
   display: inline-block;
   width: 2px;
   height: 2px;
-  margin: 1px;
+  margin: 0 0 9px 1px;
   border: 1px solid transparent;
   background-color: #eb5c10;
   border-radius: 50%;
 }
 .select_box {
-  width: 80%;
+  display: inline-block;
+  width: 75%;
   position: relative;
 }
 .select_box .select_title {
   position: relative;
-  height: 40px;
+  height: 29px;
   padding: 0 10px;
   background-color: #efefef;
   border: 1px solid #cecece;
-  line-height: 40px;
-  border-radius: 5px;
+  color: #bfbfbf;
+  line-height: 29px;
+  border-radius: 2px;
 }
 .select_box .select_title:before,
 .select_box .select_title:after {
   content: '';
   position: absolute;
   right: 23px;
-  top: 12px;
+  top: 7px;
   display: block;
   width: 2px;
   height: 12px;
@@ -80,7 +86,7 @@ body {
   position: absolute;
   right: 0;
   left: 0;
-  top: 38px;
+  top: 25px;
   border: 1px solid #cecece;
   border-radius: 0 0 5px 5px;
   margin: 0;
@@ -88,9 +94,9 @@ body {
   background-color: #efefef;
 }
 .select_box .select_list .select_li {
-  height: 40px;
+  height: 29px;
   padding: 0 10px;
-  line-height: 40px;
+  line-height: 29px;
   position: relative;
 }
 .select_box .select_list .select_li:after {
@@ -136,7 +142,6 @@ body {
 }
 .build_message {
   background-color: #fff;
-  height: 310px;
   padding: 10px 0 0 10px;
   width: 97%;
 }
@@ -160,7 +165,7 @@ body {
 .build_message .ponent_line:after {
   content: '';
   height: 1px;
-  width: 70%;
+  width: 75%;
   background-color: #b4b4b4;
   margin-left: 65px;
   display: block;
@@ -170,14 +175,14 @@ body {
   display: list-item;
   list-style-type: disc;
   margin-left: 1em;
+  line-height: 18px;
 }
 .ponent_point span {
   color: #646464;
 }
 .house_message {
   background-color: #fff;
-  height: 310px;
-  padding: 10px 0 0 10px;
+  padding: 10px 0 10px 10px;
   width: 97%;
   margin-top: 15px;
 }
@@ -189,6 +194,128 @@ p {
   padding: 0;
   color: #646464;
   font-size: 14px;
-  text-indent: 2em;
-  line-height: 20px;
+  line-height: 25px;
+}
+.ponent_area {
+  padding-top: 15px;
+}
+.deliver {
+  width: 4em;
+  display: inline-block;
+}
+.area_cells {
+  font-size: 14px;
+  margin-top: 5px;
+}
+.area_cells span {
+  color: #bfbfbf;
+}
+.area_cells .area_line {
+  width: 35%;
+  height: 25px;
+  background-color: #efeff4;
+  color: #b4b4b4;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  text-indent: 0.5em;
+}
+.area_cells .vertical {
+  vertical-align: top;
+}
+.area_cells .textarea {
+  width: 75%;
+  height: 74px;
+  background-color: #efeff4;
+  color: #b4b4b4;
+  border: 1px solid #e1e1e1;
+  border-radius: 2px;
+  text-indent: 0.5em;
+  resize: none;
+}
+.area_cells .liner {
+  width: 75%;
+}
+.super_span {
+  color: #0f0e0e;
+  margin-left: 10px;
+}
+.super {
+  vertical-align: super;
+  font-size: 12px;
+}
+.add {
+  width: 80px;
+  height: 80px;
+  background-color: #d4d4d9;
+  margin: 20px 0 0 10px;
+  position: relative;
+  text-align: center;
+}
+.add .file {
+  width: 100%;
+  margin-top: 20px;
+  opacity: 0;
+}
+.add .add_img {
+  width: 24px;
+  height: 24px;
+  background: url("../../img/content_plus_icon@2x.png") no-repeat;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -12px;
+}
+.add .add_txt {
+  color: #6d6d6e;
+  font-size: 14px;
+}
+.btn_footer {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 15px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+}
+.btn {
+  width: 90%;
+  background-color: #ea5404;
+  color: #fff;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+}
+.area_cell {
+  display: inline-block;
+  height: 24px;
+  line-height: 15px;
+  margin-left: 10px;
+}
+.area_cell .area_btn {
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  margin: 4px;
+  border: 1px solid #eb5c10;
+  border-radius: 50%;
+  vertical-align: bottom;
+}
+.area_cell.selected .icon {
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  margin: 0 0 8px 1px;
+  border: 1px solid transparent;
+  background-color: #eb5c10;
+  border-radius: 50%;
+}
+.footer_top {
+  z-index: 5;
+  background-color: #000;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  position: fixed;
 }
