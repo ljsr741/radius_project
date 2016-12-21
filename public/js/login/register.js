@@ -1,4 +1,4 @@
-
+//账号密码验证
 $(window).on("keyup",function(){
 	var e=$('#input' ).val();
 	var pass=$('#password').val();
@@ -15,6 +15,7 @@ $reg.on('tap',function(){
 });
 
 
+//下拉菜单
 var $registerPull=$('#broker');
 var $registerUl=$('.register_ul');
 //$registerPull.on('tap',function(){
@@ -38,13 +39,14 @@ $registerPull.on("tap",function(){
 	}
 });
 
+//注册页面跳转到登录页面
 $icon_return=$('#icon_return');
 $icon_return.on('tap',function(){
 	window.location.href='../login/login.html'
 });
 
 
-
+//发送验证码
 var wait=60;
 function time(event){
 	event = event||window.event;
@@ -63,9 +65,40 @@ function time(event){
 		},1000)
 	}
 }
-//var $send_code=$('#send_code');
-//$send_code.on=('tap',function(){
-//	time(this);
+var $send_code=$('#send_code');
+$send_code.on('tap',function(){
+	time(this);
+});
+//var send_code=document.getElementById("send_code")
+//send_code.onclick=(function(){time(this);})
+
+//跳转忘记密码页面
+var $forget_pass=$('#forget_pass');
+$forget_pass.on('tap',function(){
+	window.location.href='../login/password.html'
+});
+var $icon_pass=$('#icon_pass');
+$icon_pass.on('tap',function(){
+	window.location.href='../login/login.html'
+});
+
+
+//注册页面验证
+$(window).on("keyup",function(){
+	var acont=$('#acontnum' ).val();
+	var codenum=$('#codenum').val();
+	var loginnum=$('#loginnum').val();
+	var loginsnum=$('#loginsnum').val();
+	var reg=/^1\d{10}$/;
+	if(acont!=''&&reg.test(acont)&&loginnum.length>=6&&
+	   loginnum==loginsnum&&codenum!=''){
+		$("#btnlogin" ).on('tap',function(){
+			setTimeout("window.location.href = '../index/index.html'",1500)
+		} ).css('background','#ea5404')
+	}
+});
+
+//var $reg=$('#reg_bt');
+//$reg.on('tap',function(){
+//	window.location.href='../login/register.html'
 //});
-var send_code=document.getElementById("send_code")
-send_code.onclick=function(){time(this);}

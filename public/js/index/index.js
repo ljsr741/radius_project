@@ -88,6 +88,12 @@ $('.query_price').on('tap', function(){
         console.log('down');
         $self.addClass('active-down');
     }
+});
+
+
+var $load_me=$('#load_me');
+$load_me.on('tap',function(){
+    window.location.href = '../../info/info.html'
 })
 
 

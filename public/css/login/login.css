@@ -139,9 +139,10 @@ body .bt_box .bt-passwd {
   right: 15px;
   top: 28px;
   border-radius: 5px;
-  background-color: #222;
+  background-color: #a3a3a3;
   z-index: 10;
   display: none;
+  color: #fff;
 }
 .register_pull .register_ul {
   list-style: none;
@@ -153,6 +154,13 @@ body .bt_box .bt-passwd {
   height: 30px;
   text-align: center;
   line-height: 30px;
+}
+.register_pull .register_ul .register_li:after {
+  content: '';
+  display: block;
+  width: 4.5em;
+  height: 1px;
+  background-color: #fff;
 }
 .verificate_code {
   display: inline-block;
