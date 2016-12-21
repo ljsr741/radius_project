@@ -181,6 +181,11 @@ ul {
   text-align: center;
   color: #bababa;
 }
+.msg_box .main_col {
+  color: #ea5404;
+  background: url("../../img/bottom_press_icon04@2x.png") no-repeat top 15px center;
+  background-size: 20px;
+}
 .msg_box .mes {
   flex: 1;
   background: url("../../img/bottom_nor_icon02@2x.png") no-repeat top 15px center;
@@ -188,24 +193,26 @@ ul {
   line-height: 100px;
   text-align: center;
   color: #bababa;
+  position: relative;
+}
+.msg_box .mes .right_icon {
+  display: block;
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 50%;
+  background-color: #ec461f;
+  color: #fff;
+  position: absolute;
+  top: 11px;
+  right: 14px;
 }
 .msg_box .active {
   color: #ed6928;
   background: url("../../img/bottom_press_icon02@2x.png") no-repeat top 15px center;
   background-size: 20px;
-  position: relative;
-}
-.msg_box .active .right_icon {
-  vertical-align: super;
-  font-size: 12px;
-  line-height: 5px;
-  padding: 5px;
-  border-radius: 50%;
-  background-color: #ed6928;
-  color: #fff;
-  position: absolute;
-  top: 10px;
-  right: 20px;
 }
 .msg_box .me {
   flex: 1;
@@ -214,6 +221,11 @@ ul {
   line-height: 100px;
   text-align: center;
   color: #bababa;
+}
+.msg_box #move_us {
+  color: #ea5404;
+  background: url("../../img/bottom_press_icon01@2x.png") no-repeat top 15px center;
+  background-size: 20px;
 }
 .msg_box .create {
   flex: 1;

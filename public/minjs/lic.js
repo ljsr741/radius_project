@@ -1,0 +1,1 @@
+var $move_us=$("#move_us");$move_us.on("tap",function(){var s=$(this);s.hasClass("active")||($move_us.removeClass("active"),s.addClass("active"))});

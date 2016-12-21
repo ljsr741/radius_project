@@ -94,6 +94,25 @@ $('.query_price').on('tap', function(){
 var $load_me=$('#load_me');
 $load_me.on('tap',function(){
     window.location.href = '../../info/info.html'
-})
+});
 
+
+var $load_regist=$('#load_regist');
+$load_regist.on('tap',function(){
+    window.location.href='../../login/login.html'
+});
+var $move_msg=$('#move_msg');
+$move_msg.on('tap',function(){
+    window.location.href='../../msg/msg_message.html'
+});
+
+var $move_create=$('#move_create');
+$move_create.on('tap',function(){
+    window.location.href='../../reservate/reservate_listing.html'
+});
+
+var $move_main=$('#move_main');
+$move_main.on('tap',function(){
+    window.location.href='../../index/index.html'
+});
 

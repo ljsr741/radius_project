@@ -97,7 +97,7 @@ button {
 .listing_menu {
   width: 100%;
   background-color: #fff;
-  height: 50px;
+  height: 60px;
   position: fixed;
   bottom: 0;
 }
@@ -118,11 +118,11 @@ button {
 }
 .listing_menu .listing_box .ue {
   flex: 1;
-  background: url("../../img/bottom_nor_icon03@2x.png") no-repeat top 9px center;
+  background: url("../../img/bottom_press_icon03@2x.png") no-repeat top 9px center;
   background-size: 20px;
   line-height: 70px;
   text-align: center;
-  color: #bababa;
+  color: #ea5404;
 }
 .listing_menu .listing_box .mes {
   flex: 1;

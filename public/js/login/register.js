@@ -5,7 +5,7 @@ $(window).on("keyup",function(){
 	var reg=/^1\d{10}$/;
 	if(e!=''&&reg.test(e)&&pass.length>=6){
 		$("#btnlogin" ).on('tap',function(){
-			setTimeout("window.location.href = '../index/index.html'",1500)
+			setTimeout("window.location.href = '../../msg/msg_info_data.html'",1500)
 		} ).css('background','#ea5404')
 	}
 });
@@ -67,6 +67,7 @@ function time(event){
 }
 var $send_code=$('#send_code');
 $send_code.on('tap',function(){
+	$send_code.css("background","gray")
 	time(this);
 });
 //var send_code=document.getElementById("send_code")
@@ -89,12 +90,16 @@ $(window).on("keyup",function(){
 	var codenum=$('#codenum').val();
 	var loginnum=$('#loginnum').val();
 	var loginsnum=$('#loginsnum').val();
+	var identity=$('#identity' ).val();
 	var reg=/^1\d{10}$/;
 	if(acont!=''&&reg.test(acont)&&loginnum.length>=6&&
-	   loginnum==loginsnum&&codenum!=''){
-		$("#btnlogin" ).on('tap',function(){
+	   loginnum==loginsnum&&codenum!=''&&codenum!='identity'){
+		$("#btn_load" ).on('tap',function(){
 			setTimeout("window.location.href = '../index/index.html'",1500)
-		} ).css('background','#ea5404')
+		} ).css('background','#ea5404');
+		$(".btn_sure" ).on('tap',function(){
+			setTimeout("window.location.href = '../../login/login.html'",1500)
+		} ).css('background','#ea5404');
 	}
 });
 
@@ -102,3 +107,11 @@ $(window).on("keyup",function(){
 //$reg.on('tap',function(){
 //	window.location.href='../login/register.html'
 //});
+
+//返回未登陆页面
+var $load_jump=$('#load_jump');
+$load_jump.on('tap',function(){
+	window.location.href = '../../info/info.html'
+});
+
+

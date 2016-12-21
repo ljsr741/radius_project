@@ -17,7 +17,7 @@
 		<ul class="tab_bar">
 			<li class="tab_bar_cell active" onclick="msg_message()">消息</li>
 			<li class="tab_bar_cell" onclick="tomsg_prompt()">通知</li>
-			<li class="tab_bar_cell" onclick="tomsg_release()">需求<span>3</span></li>
+			<li class="tab_bar_cell" onclick="tomsg_demand()">需求<span>3</span></li>
 		</ul>
 	</header>
 	<article class="demand_cells">
@@ -54,17 +54,27 @@
 	</article>
 	<div class="msg_menu">
 		<ul class="msg_box">
-			<li class="msg_cell"><span>首页</span></li>
-			<li class="msg_cell ue"><span>预约</span></li>
-			<li class="msg_cell create"></li>
-			<li class="msg_cell mes active"><span>信息<span class="right_icon">3</span></span></li>
-			<li class="msg_cell me"><span>我</span></li>
+			<li class="msg_cell" id="move_main"><span>首页</span></li>
+			<li class="msg_cell ue" id="move_create"><span>预约</span></li>
+			<li class="msg_cell create" id="move_need"></li>
+			<li class="msg_cell mes active" id="move_msg"><span>信息<span class="right_icon">3</span></span></li>
+			<li class="msg_cell me" id="load_me"><span>我</span></li>
 		</ul>
 	</div>
-	<script src="../../public/js/msg/msg.js"></script>
 	<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
 	<script src="../../public/libs/zepto/touch.js"></script>
 	<script src="../../public/js/component/component.js"></script>
+	<script src="../../public/js/index/index.js"></script>
 </body>
-
+<script>
+function msg_message(){
+	location.href = "msg_message.html"
+}
+function tomsg_prompt(){
+	location.href = "msg_prompt.html"
+}
+function tomsg_demand(){
+	location.href = "msg_demand.html"
+}
+</script>
 </html>
