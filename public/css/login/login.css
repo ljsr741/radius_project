@@ -42,27 +42,28 @@ body .form-list .form-cell-name {
   width: 50px;
   padding-left: 40px;
   background: url("../../img/content_ID_icon@2x.png") no-repeat left 10px center;
-  background-size: 25% 50%;
+  background-size: 20%;
 }
 body .form-list .form-cell-name.cell-passwd {
   background: url("../../img/content_password_icon@2x.png") no-repeat left 10px center;
-  background-size: 25% 50%;
+  background-size: 16%;
 }
 body .form-list .form-cell .form-cell-input {
   flex: 1;
   border: none;
 }
 body .form-list .form-cell .btn_code {
-  width: 5rem;
+  width: 8em;
   font-size: 12px;
   background-color: #ed6928;
   color: #fff;
   text-align: center;
   border-radius: 5px;
-  margin-right: 20px;
   height: 25px;
   line-height: 25px;
   margin-top: 8px;
+  margin-right: 10px;
+  border: none;
 }
 body .form-list .form-cell:after {
   content: '';
@@ -76,25 +77,25 @@ body .form-list .form-cell:after {
   background-color: #efefef;
 }
 body .form-list .form-cell .cell-code {
-  width: 70px;
+  width: 55px;
   background: url("../../img/content_verify_icon@2x.png") no-repeat left 10px center;
-  background-size: 20px 50%;
+  background-size: 14%;
 }
 body .form-list .form-cell .cell-status {
   width: 50px;
   background: url("../../img/content_position_icon@2x.png") no-repeat left 10px center;
-  background-size: 20px 50%;
+  background-size: 18%;
 }
 body .form-list .form-cell .cell-status:after {
   content: '';
   display: block;
-  background: url("../../img/nav_back_icon@2x.png") no-repeat;
+  background: url("../../img/nav_back_icon@2x.png") no-repeat center;
   background-size: 40%;
   width: 20px;
   height: 36px;
   transform: rotate(-90deg);
   position: absolute;
-  right: 0;
+  right: 10px;
   bottom: 7px;
 }
 body .bt_box {
@@ -117,23 +118,30 @@ body .bt_box .btn_login {
 body .bt_box .bt-reg {
   padding-left: 10px;
   flex: 1;
-  color: #000;
+  color: #ed6928;
+  font-size: 14px;
 }
-body .bt_box .bt-reg span {
+body .bt_box .registered {
+  color: #707071;
+}
+body .bt_box .registered span {
   color: #ed6928;
   text-decoration: underline;
 }
 body .bt_box .bt-passwd {
   padding-right: 10px;
+  font-size: 14px;
 }
 .register_pull {
   width: 4.5em;
   height: 150px;
   position: absolute;
-  right: 10px;
-  top: 25px;
-  border-radius: 0 0 5px 5px;
+  right: 15px;
+  top: 28px;
+  border-radius: 5px;
   background-color: #222;
+  z-index: 10;
+  display: none;
 }
 .register_pull .register_ul {
   list-style: none;
@@ -142,8 +150,17 @@ body .bt_box .bt-passwd {
 }
 .register_pull .register_ul .register_li {
   width: 4.5em;
-  height: 20px;
+  height: 30px;
   text-align: center;
-  line-height: 20px;
-  margin-top: 1px;
+  line-height: 30px;
+}
+.verificate_code {
+  display: inline-block;
+  width: 65px;
+}
+#broker {
+  color: #b4b4b4;
+}
+.move_size {
+  width: 150px;
 }
