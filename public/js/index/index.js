@@ -116,3 +116,11 @@ $move_main.on('tap',function(){
     window.location.href='../../index/index.html'
 });
 
+
+
+//
+//$('#move_color').on('tap',function(){
+//     $(this).css('background','#fff');
+//    //$('#move_color' ).not($(this))
+//});
+

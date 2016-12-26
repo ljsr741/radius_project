@@ -124,11 +124,60 @@ body {
   display: flex;
   width: 100%;
   height: 50px;
-  margin-top: 10px;
+  margin-top: 15px;
   background-color: #fff;
 }
 .query_box .query_block {
   flex: 1;
+}
+.query_box .query_block .down-box {
+  width: 100%;
+  background-color: #f0f0f0;
+  padding-bottom: 10px;
+  display: none;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+.query_box .query_block .down-box .down_sells {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.query_box .query_block .down-box .down_sells .down_sell {
+  text-align: center;
+  line-height: 40px;
+  color: #323232;
+}
+.query_box .query_block .price_content {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.query_box .query_block .price_content .region {
+  width: 22%;
+  height: 30px;
+  border: 1px solid #d6d7dc;
+  border-radius: 3px;
+}
+.query_box .query_block .price_content .line_auto {
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  background-color: #b4b4b4;
+  margin: 0 5px 5px 5px;
+}
+.query_box .query_block .price_cur {
+  width: 20%;
+  height: 34px;
+  border: 1px solid #d6d7dc;
+  border-radius: 3px;
+  background-color: #fff;
+  font-size: 14px;
+  color: #323232;
+  margin-left: 5px;
 }
 .query_box .query_block .text {
   display: block;
@@ -157,16 +206,4 @@ body {
 }
 .block_box .info_box {
   flex: 5;
-}
-.down-box {
-  width: 100%;
-  background: #f00;
-  display: none;
-  position: relative;
-  z-index: 10;
-}
-.down-box ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
