@@ -4,9 +4,9 @@ var path=require('path');
 var express=require('express');
 
 var proxy=require('http-proxy-middleware');
-var nodegrass=require('nodegrass');
+//var nodegrass=require('nodegrass');
 //定义验证接口
-var sha1 = require("sha1");
+//var sha1 = require("sha1");
 
 //var appID="wx697318a9305fc01f";
 //var appsecret="cec0e63c4621c312e63afda7c6e55f7a";
